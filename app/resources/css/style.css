@@ -21,13 +21,13 @@ header
 header input
 {
     width: 100%;
-    height: 50px; 
+    height: 50px;
     float: left;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 15px; 
+    font-size: 15px;
     font-weight: 400; 
-    text-indent: 18px ; 
+    text-indent: 18px;
 
     border-top-right-radius: 25px;
     border-top-left-radius: 5px;
@@ -36,6 +36,7 @@ header input
     border: 0px; 
     box-shadow: none;
     outline: none;
+    padding: 0 60px 0 0;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -43,20 +44,41 @@ header input
     -o-appearance: none;
     appearance: none;
 }
+
+header button
+{
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    z-index: 2; 
+    border-radius: 25px; 
+    background: #fff;
+    border: 0px; 
+    box-shadow: none; 
+    outline: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
 /*place holders for most browsers available*/
 header input::-webkit-input-placeholder 
 {
-  color: rgba(255, 255, 255, 0.75) ;
+  color: rgba(255, 255, 255, 0.75);
 }
 header input::-moz-placeholder 
 {
-  color: rgba(255, 255, 255, 0.75) ;
+  color: rgba(255, 255, 255, 0.75);
 }
 header input:-ms-input-placeholder 
 {
-  color: rgba(255, 255, 255, 0.75) ;
+  color: rgba(255, 255, 255, 0.75);
 }
 header input:-moz-placeholder 
 {
-  color: rgba(255, 255, 255, 0.75) ;
+  color: rgba(255, 255, 255, 0.75);
 }
