@@ -104,15 +104,42 @@ ul.todo li
   width: 100%;
   height: 50px;
   float: left;
+  position: relative;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
   margin: 0 0 10px 0;
+  padding: 0 100px 0 0;
 }
 
 ul.todo li:last-of-type
 {
   margin: 0;
+}
+
+ul.todo li .buttons
+{
+  width: 100px;
+  height: 50px; 
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.todo li .buttons button
+{
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: none;
+  border: 0px; 
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 /*place holders for most browsers available*/
