@@ -4,10 +4,17 @@ body
   background: #e3ebee;
   padding: 80px 0 0 0;
 }
+
+.noFill 
+{
+  fill: none;
+}
+
 body, input, button
 {
     font-family: 'Roboto Mono', monospace;
 }
+
 header 
 {
     width: 100%;
@@ -84,6 +91,24 @@ header button svg
 header button svg .fill
 {
   fill: #25b99a;
+}
+
+/*place holders for most browsers available*/
+header input::-webkit-input-placeholder 
+{
+  color: rgba(255, 255, 255, 0.75);
+}
+header input::-moz-placeholder 
+{
+  color: rgba(255, 255, 255, 0.75);
+}
+header input:-ms-input-placeholder 
+{
+  color: rgba(255, 255, 255, 0.75);
+}
+header input:-moz-placeholder 
+{
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .container
@@ -199,22 +224,4 @@ ul.todo li .buttons button.remove:hover svg .fill
 ul.todo li .buttons button.complete svg .fill
 {
    fill: #25b99a;
-}
-
-/*place holders for most browsers available*/
-header input::-webkit-input-placeholder 
-{
-  color: rgba(255, 255, 255, 0.75);
-}
-header input::-moz-placeholder 
-{
-  color: rgba(255, 255, 255, 0.75);
-}
-header input:-ms-input-placeholder 
-{
-  color: rgba(255, 255, 255, 0.75);
-}
-header input:-moz-placeholder 
-{
-  color: rgba(255, 255, 255, 0.75);
 }
