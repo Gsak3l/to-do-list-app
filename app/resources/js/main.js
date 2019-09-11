@@ -10,6 +10,7 @@ document.getElementById('add').addEventListener('click', function()
     if(value)
     {
         addItemTodo(value);
+        document.getElementById('item').value = "";
     }
 });
 
@@ -24,11 +25,20 @@ function addItemTodo(text)
     var remove = document.createElement('button');
     remove.classList.add('remove');
     remove.innerHTML = removeSVG;
+    //add click event for removing an item
+    remove.addEventListener('click', removeItem);
     var complete = document.createElement('button');
     complete.classList.add('complete');
     complete.innerHTML = completeSVG;
     buttons.appendChild(remove);
     buttons.appendChild(complete);
     item.appendChild(buttons);
-    list.appendChild(item);
+    list.insertBefore(item, list.childNodes[0]);
+}
+
+function removeItem()
+{
+    var item = this.parentNode.parentNode;
+    var parent = item.parentNode;
+    parent.removeChild(item);
 }
