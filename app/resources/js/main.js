@@ -9,6 +9,7 @@ document.getElementById('add').addEventListener('click', function()
     var value = document.getElementById('item').value;
     if(value)
     {
+        data.todo.push(value);
         addItemTodo(value);
         document.getElementById('item').value = "";
     }
@@ -52,6 +53,8 @@ function completeItem()
     var parent = item.parentNode;
     var id = parent.id;
     var target;
+    data.todo.splice(data.todo.indexOf(item.innerText));
+    
     //check if the item should be added to completed
     //or if it should be added to the todo
     if(id == 'todo')
@@ -68,3 +71,12 @@ function completeItem()
     target.insertBefore(item, target.childNodes[0]);
     
 }
+
+//Object
+var data = 
+{
+    todo:[],
+    completed:[]
+}
+
+
